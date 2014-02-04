@@ -1,8 +1,3 @@
-// Hacked on @ The IC (http://interaction.net.au)
-//  >> Adapted by Greg Turner to work on elements, not their children, and to take into account borders and padding
-//  >> Added to by Mark Finger to include `equalHeightsByHClass` which groups elements together by a `h-class` attribute, then equalises the heights of each group of elements.
-//  >> Added jQuery namespace wrapper by Dave Hansen-Lange.
-
 /*--------------------------------------------------------------------
  * JQuery Plugin: "EqualHeights"
  * by:	Scott Jehl, Todd Parker, Maggie Costello Wachs (http://www.filamentgroup.com)
@@ -10,16 +5,19 @@
  * Copyright (c) 2007 Filament Group
  * Licensed under GPL (http://www.opensource.org/licenses/gpl-license.php)
  *
- * Description: Compares the heights or widths of the top-level children of a provided element 
- 		and sets their min-height to the tallest height (or width to widest width). Sets in em units 
- 		by default if pxToEm() method is available.
- * Dependencies: jQuery library, pxToEm method	(article: http://www.filamentgroup.com/lab/retaining_scalable_interfaces_with_pixel_to_em_conversion/)							  
+ * Description: Compares the heights or widths of the top-level children of a provided element
+ *	and sets their min-height to the tallest height (or width to widest width). Sets in em units
+ *	by default if pxToEm() method is available.
+ * Dependencies: jQuery library, pxToEm method	(article: http://www.filamentgroup.com/lab/retaining_scalable_interfaces_with_pixel_to_em_conversion/)
  * Usage Example: $(element).equalHeights();
  * 		Optional: to set min-height in px, pass a true argument: $(element).equalHeights(true);
- * Version: 2.0, 07.24.2008
+ * Version: 3.0, 04.04.2013
  * Changelog:
  *  	08.02.2007 initial Version 1.0
  *  	07.24.2008 v 2.0 - added support for widths
+ *  	??.??.???? by Greg Turner to work on elements, not their children, and to take into account borders and padding
+ *  	??.??.???? by Mark Finger to include `equalHeightsByHClass` which groups elements together by a `h-class` attribute, then equalises the heights of each group of elements.
+ *  	04.04.2013 by Dave Hansen-Lange Added jQuery namespace wrapper.
 --------------------------------------------------------------------*/
 (function ($) {
 
